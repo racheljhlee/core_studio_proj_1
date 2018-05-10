@@ -32,8 +32,9 @@ $( document ).ready(function() {
       var formSeven = $("#text-7").val();
       var formEight = $("#text-8").val();
 
-      console.log("User wrote: " + formOne);
-      if(formOne == "ambitions" && formTwo == "beginner" && formThree == "creative" && formFour == "disappoints" && formFive == "fight" && formSix == "gap" && formSeven == "phase" && formEight == "work") {
+      var formValues = [formOne, formTwo, formThree, formFour, formFive, formSix, formSeven, formEight];
+      if(formValues.includes("ambitions") && formValues.includes("beginners") && formValues.includes("creative") && formValues.includes("disappoints") && formValues.includes("fight") && formValues.includes("gap") && formValues.includes("phase") && formValues.includes("work")) {
+        console.log('got here');
         window.open("five.html");
       } 
 
